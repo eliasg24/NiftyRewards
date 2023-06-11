@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+
+    <header>
+        <img src="https://i.imgur.com/cJZoTPj.png" width="200" height="200" alt="logo" padding="0" margin="0">
+    </header>
+
+
+
+    <main>
+        <div class="container-img">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="imagen-producto" />
+        </div>
+        <div class="container-info-product">
+            <div class="container-price">
+                <span>$95.00</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="colour">Color</label>
+                    <select name="colour" id="colour">
+							<option disabled selected value="">
+								Select an option
+							</option>
+							<option value="rojo">Red</option>
+							<option value="blanco">White</option>
+							<option value="beige">Beige</option>
+						</select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Size</label>
+                    <select name="size" id="size">
+							<option disabled selected value="">
+								Select and option
+							</option>
+							<option value="40">40</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+						</select>
+                </div>
+                <button class="btn-clean">Clear</button>
+            </div>
+
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input type="number" placeholder="1" value="1" min="1" class="input-quantity" />
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Add to cart
+					</button>
+
+                <button class="btn-nft" import { Header } from './header.tsx'>
+                    
+						NFT Holder
+					</button>
+            </div>
+
+
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Description</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description">
+                    <p>
+                        Introducing our high-end shoe, a pinnacle of elegance, craftsmanship, and luxury. Meticulously designed with meticulous attention to detail, this shoe embodies sophistication and refined taste. From the finest materials to the impeccable stitching, every
+                        element is thoughtfully curated to create a footwear masterpiece.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h4>Additional Information</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-additional-information hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+
+            <div class="container-reviews">
+                <div class="title-reviews">
+                    <h4>Reviews</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+
+            <div class="container-social">
+                <span>Shared</span>
+                <div class="container-buttons-social">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-related-products">
+        <h2>Related Items</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" alt="producto-1" />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Nike - Roshe Run</h3>
+                        <p class="category">Footwear, Sneakers</p>
+                    </div>
+                    <div class="price">$85.00</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80" alt="producto-2" />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Common Projects Achilles</h3>
+                        <p class="category">Footwear, Sneakers</p>
+                    </div>
+                    <div class="price">$255.00</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="producto-3" />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Adidas - Boston Super OG</h3>
+                        <p class="category">Footwear, Sneakers</p>
+                    </div>
+                    <div class="price">$105.00</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="producto-4" />
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Common Projects Achilles</h3>
+                        <p class="category">Footwear, Sneakers</p>
+                    </div>
+                    <div class="price">$250.00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <h6>Powered by Criptomty.js</h6>
+    </footer>
+
+
+</body>
+
+
+
+
+</html>
